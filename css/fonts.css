@@ -1,0 +1,16 @@
+* {
+  font-family: Arial;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em; }
+
+#headline {
+  font-weight: bold;
+  font-size: 2em;
+  color: white; }
+
+/*# sourceMappingURL=fonts.css.map */

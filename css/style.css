@@ -1,0 +1,256 @@
+* {
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+.shadow, header #headline-area, header #navbar, .shape-content-box, #content-top figure, #content-bottom .description-box {
+  box-shadow: 5px 5px 5px grey;
+}
+
+header {
+  height: 120px;
+  width: 100%;
+}
+header #headline-area {
+  height: 110px;
+  background-color: #003680;
+}
+header #logo {
+  position: absolute;
+  height: inherit;
+  top: 15px;
+  left: 60px;
+  width: 80px;
+  height: 80px;
+}
+header img {
+  width: 100px;
+  max-width: 100%;
+}
+header #headline {
+  position: absolute;
+  left: 170px;
+  top: 20px;
+  font-weight: bold;
+  font-size: 2.2em;
+  color: white;
+}
+header #nav-btn {
+  position: absolute;
+  right: 0px;
+  top: 86px;
+  height: 24px;
+  width: 28px;
+  background-color: #0080ff;
+}
+header #nav-btn:hover, header #nav-btn:focus {
+  background-color: white;
+}
+header .hidden {
+  visibility: hidden;
+}
+header .visible {
+  visibility: visible;
+}
+header #navbar {
+  height: 45px;
+}
+header ul {
+  background-color: #0080ff;
+  width: 100%;
+  height: inherit;
+  list-style-type: none;
+}
+header li {
+  float: left;
+  height: 45px;
+  width: 25%;
+  text-align: center;
+}
+header #navbar a:hover {
+  background-color: #003680;
+  border-bottom: 5px solid #0080ff;
+  padding-bottom: 5px;
+  color: white !important;
+}
+header #navbar a {
+  font-weight: bold;
+  display: block;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 810px) {
+  #headline {
+    font-size: 1.7em !important;
+  }
+
+  .shape-content-box, #content-top figure, #content-bottom .description-box {
+    min-width: 250px !important;
+  }
+
+  #navbar {
+    font-size: 0.8em !important;
+  }
+
+  figcaption {
+    font-size: 1.1em !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  #headline {
+    font-size: 1.2em !important;
+  }
+
+  #navbar {
+    font-size: 0.6em !important;
+  }
+
+  figcaption {
+    font-size: 1em !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .shape-content-box, #content-top figure, #content-bottom .description-box {
+    min-width: 220px !important;
+  }
+
+  .footer-content {
+    font-size: 0.8em !important;
+    padding: 5px 15px !important;
+  }
+
+  figcaption {
+    font-size: 0.8em !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  #headline {
+    font-size: 0.9em !important;
+  }
+
+  #navbar a {
+    padding: 5px 10px !important;
+  }
+
+  .footer-content {
+    font-size: 0.7em !important;
+    padding: 5px 12px !important;
+  }
+}
+.shape-content-box, #content-top figure, #content-bottom .description-box {
+  min-width: 400px;
+  width: 40%;
+  margin-top: 15px;
+  background-color: white;
+  border: 1px solid #666666;
+  border-radius: 5px;
+}
+
+.flex-content, #content-top, #content-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5eaee;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  marign-left: 30px;
+  margin-bottom: 30px;
+}
+
+#content-top figcaption {
+  height: 70px;
+  padding: 5px;
+  font-size: 1.5em;
+}
+#content-top img {
+  width: 100%;
+}
+#content-top #city {
+  color: #018cc5;
+}
+#content-top #price, #content-top #average {
+  position: relative;
+  float: right;
+}
+#content-top .price-quoting {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#content-top #price, #content-top #country {
+  color: #666666;
+}
+#content-top #average {
+  color: #9a9a9a;
+}
+
+#content-bottom h3 {
+  color: #9a9a9a;
+}
+#content-bottom h1 {
+  color: #018cc5;
+  padding: 10px 5px;
+}
+#content-bottom .flag {
+  width: 100%;
+}
+#content-bottom .description {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+#content-bottom .description a {
+  width: 45%;
+}
+#content-bottom .description-text {
+  width: 40%;
+  line-height: 1.5em;
+  font-size: 1vw;
+  padding: 8px;
+  color: #333;
+}
+#content-bottom .description-text p::first-letter {
+  font-size: 1.8vw;
+  color: #003680;
+}
+#content-bottom .highlight-img {
+  width: 18vw;
+  height: 13vw;
+  margin-top: 25px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  hight: 100px;
+  background-color: #003680;
+  text-align: center;
+}
+footer .footer-content {
+  display: inline;
+  color: white;
+  line-height: 40px;
+  font-size: 1em;
+  padding: 5px 35px;
+}
+
+/*# sourceMappingURL=style.css.map */

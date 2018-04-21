@@ -1,0 +1,101 @@
+@import color
+@import fonts
+@import top
+@import mediaquierries
+.shape-content-box
+	min-width: 400px
+	width: 40%
+	margin-top: 15px
+	background-color: white
+	border: 1px solid $font-color-price
+	border-radius: 5px
+	@extend .shadow //.shadow is defined in _header.sass
+	
+.flex-content
+	width: 100%
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+
+body
+	margin: 0
+	padding: 0
+	background-color: $back-color-content
+figure
+	margin: 0
+	padding: 0
+
+#content
+	marign-left: 30px
+	margin-bottom: 30px
+#content-top
+	@extend .flex-content
+	figure
+		@extend .shape-content-box
+	figcaption
+		height: 70px
+		padding: 5px
+		font-size: 1.5em
+	img
+		width: 100%
+	#city
+		color: $font-color-city
+	#price, #average
+		position: relative
+		float: right
+	.price-quoting
+		margin-top: 10px
+		margin-bottom: 10px
+	#price, #country
+		color: $font-color-price
+	#average
+		color: $font-color-average
+#content-bottom
+	@extend .flex-content
+	.description-box
+		@extend .shape-content-box
+	h3
+		color: $font-color-average	
+	h1
+		color: $font-color-city
+		padding: 10px 5px
+	.flag
+		width: 100%
+	.description
+		width: 100%
+		// border: 3px solid green
+		display: flex
+		justify-content: space-around
+		margin-top: 20px
+	.description a
+		width: 45%
+	.description-text
+		// border: 2px solid orange
+		width: 40%
+		line-height: 1.5em
+		font-size: 1vw
+		padding: 8px
+		color: #333
+	.description-text p::first-letter
+		font-size: 1.8vw
+		color: $back-color-header
+	.highlight-img
+		width: 18vw
+		height: 13vw
+		margin-top: 25px	
+footer
+	position: relative
+	width: 100%
+	hight: 100px
+	background-color: $back-color-header
+	text-align: center
+
+	.footer-content
+		display: inline
+		color: white
+		line-height: 40px
+		font-size: 1em
+		padding: 5px 35px
+
+
+

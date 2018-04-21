@@ -1,0 +1,77 @@
+.shadow
+	box-shadow: 5px 5px 5px grey
+
+header
+	height: 120px
+	width: 100%
+
+
+	#headline-area
+		height: 110px
+		background-color: $back-color-header
+		@extend .shadow
+
+	#logo
+		position: absolute
+		height: inherit
+		top: 15px
+		left: 60px
+		// float: left
+		// margin: 15px 0px 15px 60px
+		width: 80px
+		height: 80px
+
+	img
+		width: 100px
+		max-width: 100%
+
+
+	#headline
+		position: absolute
+		left: 170px
+		top: 20px
+		font-weight: bold
+		font-size: 2.2em	
+		color: white
+
+	#nav-btn
+		position: absolute
+		right: 0px
+		top: 86px
+		height: 24px
+		width: 28px
+		background-color: $nav-color
+
+	#nav-btn:hover, #nav-btn:focus 
+		background-color: white
+
+	.hidden
+		visibility: hidden
+
+	.visible
+		visibility: visible
+	#navbar
+		height: 45px
+		@extend .shadow
+	ul
+		background-color: $nav-color
+		width: 100%
+		height: inherit
+		list-style-type: none
+
+	li
+		float: left
+		height: 45px
+		width: 25%
+		text-align: center
+	#navbar a:hover 
+		background-color: $back-color-header
+		border-bottom: 5px solid $nav-color
+		padding-bottom: 5px
+		color: white !important
+	#navbar a
+		font-weight: bold
+		display: block
+		padding: 10px 20px
+
+	

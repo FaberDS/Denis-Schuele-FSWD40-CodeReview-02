@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 </head>
+
 <body>
-	
+    <header>
+        <div id="headline-area">
+            <div id="logo"><img src="img/logo.png"></div>
+            <div id="headline">
+                <h1>Price Comparison</h1>
+            </div>
+            <button id="nav-btn" onclick="myFunction()"><i class="fas fa-bars" aria-hidden></i></button>
+        </div>
+        <nav class="hidden" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="amsterdam.html">Amsterdam</a></li>
+                <li><a href="london.html">London</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content" class="margin-top">
+        <div id="content-top">
+            <figure>
+                <img src="img/amsterdam.png" alt="Amsterdam Image">
+                <figcaption>
+                    <div class="name">
+                        <span id="city">Amsterdam</span>
+                        <span id="price">1.189,00€</span>
+                    </div>
+                    <div class="price-quoting">
+                        <span id="country">The Netherlands</span>
+                        <span id="average">Average Price</span>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/london.png" alt="London Image">
+                <figcaption>
+                    <div class="name">
+                        <span id="city">London</span>
+                        <span id="price">2.360,00€</span>
+                    </div>
+                    <div class="price-quoting">
+                        <span id="country">United Kingdom</span>
+                        <span id="average">Average Price</span>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+        <div id="content-bottom">
+            <div class="description-box">
+                <img src="img/netherland-flag.png" alt="The Flag of the Netherlands" class="flag">
+                <div class="description">
+                    <div class="description-text">
+                    <h3>Highlight</h3>
+                    <h1>Rotterdam</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Udo eiusmod tempor incididunt ut labore et dolore magna aliqua.do eiusmod tempor incididunt ut labore et</p></div>
+                     <div class="description-link"><a href="https://www.urlaubsguru.de/reisemagazin/rotterdam-tipps/" class="highlight-link"><img src="img/highlight-amsterdam.jpg" alt="Hightlights of Amsterdam" class="highlight-img"></a></div>
+                    
+                </div>
+                <div class="description">
+                	<div class="description-text">
+                	<h3>Highlight</h3>
+                    <h1>Keukenhof</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. do eiusmod tempor incididunt ut labore et dolore magna aliqua.do eiusmod tempor incididunt ut labore et.</p></div>
+                     <div class="description-link"><a href="https://keukenhof.nl/de/" class="highlight-link"><img src="img/highlight-amsterdam2.jpg" alt="Hightlights of Amsterdam 2" class="highlight-img"></a></div>
+                    
+                </div>
+            </div>
+            <div class="description-box">
+                <img src="img/united-kingdom-flag.png" alt="The Flag of United Kingdom" class="flag">
+                <div class="description">
+                	<div class="description-text">
+                	<h3>Highlight</h3>
+                    <h1>The Tower</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+                    <div class="description-link"><a href="https://de.wikipedia.org/wiki/Tower_of_London" class="highlight-link"><img src="img/highlight-london.jpg" alt="Hightlights of London" class="highlight-img"></a></div>
+                    
+                </div>
+                <div class="description">
+                    <div class="description-text">
+                    <h3>Highlight</h3>
+                    <h1>The Eye of London</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+                    <div class="description-link">
+                    <a href="https://www.londoneye.com/" class="highlight-link"><img src="img/highlight-london2.jpg" alt="Hightlights of London 2" class="highlight-img"></a></div>
+                    
+                </div>
+            </div>	
+        </div>
+    </div>
+    <footer>
+        <p class="footer-content">&copy FaberDesign</p> 
+        <a href="#top" class="footer-content">to the top</a> 
+        <a href="impressum.html" class="footer-content">Impressum</a>
+    </footer>
 </body>
+
 </html>
