@@ -65,6 +65,12 @@ function bookBoth(){
 	document.getElementById("price-both").style.padding=("8px");
 	document.getElementById("price-both").innerHTML = "Your<mark><em>" + tripA + " </em></mark> and <mark> <em> " + tripL + "</em></mark> just comes up to <h1>" + priceSum + " €</h1>";
 }
+function timeMsgGolden(){
+var t=setTimeout("alertMsgGolden()",4000);
+}
+function alertMsgGolden(){
+alert("It would be " + discountGoldPart + " € less! If you would own a GoldenCard");
+}
 // function discountL(){
 // 	alert("Book also the" + tripA + " and just pay " + discountPrize + "€!");
 // 	alert(" This means you have to pay " + discount1 + " € less!");
