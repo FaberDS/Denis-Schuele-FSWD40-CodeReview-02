@@ -34,7 +34,7 @@ figure
 	figure
 		@extend .shape-content-box
 	figcaption
-		height: 70px
+		height: 166px
 		padding: 5px
 		font-size: 1.5em
 	img
@@ -51,6 +51,19 @@ figure
 		color: $font-color-price
 	#average
 		color: $font-color-average
+	.btn
+		text-align: center
+		// I don't know why the left one is without this margin upper then the right outline: none
+	#book-amsterdam
+		margin-top: 10px
+	.book-btn
+		font-size: 2em
+		background-color: #fbf4ad
+		padding: 8px
+		@extend .border-radius
+		@extend .shadow
+		color: $back-color-header
+
 #content-bottom
 	@extend .flex-content
 	.description-box
