@@ -30,11 +30,53 @@
         </nav>
     </header>
     <div id="content" class="margin-top">
-        <div id="content-invoice">
+        <div id="content-invoice" style="margin-top: 40px">
             <div id="bill-london" class="bill-content">
-                <div class="bill-header"><h1>London</h1></div>
+                <div class="bill-header">
+                    <h1>London</h1></div>
                 <div class="bill-img-container"><img class="bill-img" src="img/london.png" alt="London Image"></div>
+                <div class="booking-content">
+                    <h4>So now you are just one click from your next holiday to your dream </br><mark class="trip-name"><em>"City-Trip-to-London"</em></mark></h4>
+                    <form>
+                        <input type="checkbox" class="checkbox-invoice" id="checkAgb" name="agb" required>
+                        <span>Yes I read the <a href="http://www.omedoil.com/de/content/3-terminos-y-condiciones-de-uso">AGB</a> and a accept them.<br></span></form>
+                    <span>With a click on this button your journey will be reserved for you </br><mark>Attention</mark> this click is obligatory</span>
+                    <button type="button" onclick="bookLondon(); timeMsgL(); timeMsg2();">book now</button>
+                </div>
                 <div id="price-london"></div>
+            </div>
+        </div>
+        <div id="content-invoice">
+            <div id="bill-amsterdam" class="bill-content">
+                <div class="bill-header">
+                    <h1>Amsterdam</h1></div>
+                <div class="bill-img-container"><img class="bill-img" src="img/amsterdam.png" alt="Amsterdam Image"></div>
+                <h4>So now you are just one click from your next holiday to your dream </br><mark class="trip-name"><em>"City-Trip-to-London"</em></mark></h4>
+                <input type="checkbox" class="checkbox-invoice" id="agb">
+                <span>Yes I read the <a href="http://www.omedoil.com/de/content/3-terminos-y-condiciones-de-uso">AGB</a> and a accept them.<br></span>
+                <span>With a click on this button your journey will be reserved for you </br><mark>Attention</mark> this click is obligatory</span>
+                <button type="button" onclick="bookAmsterdam(); timeMsgA(); timeMsg2();">book now</button>
+                <div id="price-amsterdam"></div>
+            </div>
+        </div>
+        <div id="content-invoice">
+            <div id="bill-amsterdam" class="bill-content bill-both" style="height: 830px">
+                <div class="bill-header">
+                    <h1>Amsterdam & London</h1></div>
+                <div class="bill-img-container "><img class="bill-img" src="img/amsterdam.png" alt="Amsterdam Image" style="width: 18%"></div>
+                <div class="bill-img-container"><img class="bill-img bill-img-both" src="img/london.png" alt="London Image" style="width: 18%"></div>
+                <h4>So now you made the wright decission to book directly both, the </br><mark class="trip-name"><em>"City-Trip-to-London"</em></mark> and the <mark class="trip-name"><em>"City-Trip-to-London"</em></mark></h4>
+                <h1 class="bill-header" style="font-size: 1.2em; width: 50%">See how much money you will safe, if you are one of the lucky GOLDEN CARD owner </h1>
+                <button type="button" id="goldenBtn" onclick="goldenRabatt()"><img src="img/goldencard.jpg" alt="GoldenCard" id="golden"></button>
+                <div id="invoice-both-bottom">
+                    <form>
+                        <input type="checkbox" class="checkbox-invoice" id="agb">
+                        <span>Yes I read the <a href="http://www.omedoil.com/de/content/3-terminos-y-condiciones-de-uso">AGB</a> and a accept them.<br></span>
+                        <span>With a click on this button your journey will be reserved for you </br><mark>Attention</mark> this click is obligatory</span>
+                    </form>
+                    <button type="button" onclick="bookBoth()">book now</button>
+                </div>
+                <div id="price-both"></div>
             </div>
         </div>
     </div>

@@ -50,18 +50,45 @@
 		background-color: red
 .bill-content
 	margin: 5%
-	height: 500px
+	height: 400px
 	line-height: 2.5em
 	padding: 15px
 	@extend .shadow
 	@extend .borders
 	@extend .border-radius
+	
 .bill-header
 	width: 30%
+	color: $back-color-header
 
 .bill-img
 	width: 30%
-	border-radius: 50%
-	position: relative
 	float: right
 	margin-right: 50px
+.bill-img, #golden
+	border-radius: 50%
+	position: relative
+
+#golden
+	width: 100%
+#invoice-both-bottom
+	width: 100%
+	height: auto
+	margin: 5px 15px
+#goldenBtn
+	width: 30%
+
+	#price-london
+		background-color: white
+		hight: 50px
+		width: 30%
+		line-height: 4em
+		font-size: 2em
+		border: 4px dotted $back-color-header
+	#bill-both-container
+		display: flex
+		jusify-content: space-around
+
+	.bill-both
+		width: 28%
+

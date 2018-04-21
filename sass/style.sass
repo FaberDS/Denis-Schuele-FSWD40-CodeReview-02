@@ -1,8 +1,19 @@
 @import color
-@import fonts
 @import top
 @import mediaquierries
 @import sidepages
+*
+	font-family: Arial
+	padding: 0
+	margin: 0
+
+a
+	text-decoration: none
+	color: black
+	font-size: 1.5em
+
+	
+
 .shape-content-box
 	min-width: 400px
 	width: 40%
@@ -53,6 +64,7 @@ figure
 		color: $font-color-average
 	.btn
 		text-align: center
+		padding-top: 8px
 		// I don't know why the left one is without this margin upper then the right outline: none
 	#book-amsterdam
 		margin-top: 10px
@@ -63,7 +75,12 @@ figure
 		@extend .border-radius
 		@extend .shadow
 		color: $back-color-header
+	#content-invoice
+		height: 250px
 
+	.trip-name
+		padding: 10px 40px
+		
 #content-bottom
 	@extend .flex-content
 	.description-box
@@ -96,7 +113,17 @@ figure
 	.highlight-img
 		width: 18vw
 		height: 13vw
-		margin-top: 25px	
+		margin-top: 25px
+	
+// --------------------------scale------------------------
+
+.highlight-img 
+	transition: transform 2s
+    
+
+.highlight-img:hover 
+	transform: scale(1.5, 1.5)
+
 footer
 	position: relative
 	width: 100%

@@ -1,15 +1,3 @@
-* {
-  font-family: Arial;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5em;
-}
-
 .shadow, header #headline-area, header #navbar, #amsterdam-info, #london-info, #amsterdam-info .hotel-link img, #london-info .hotel-link img, #amsterdam-info .discount-button, #london-info .discount-button, .bill-content, .shape-content-box, #content-top figure, #content-bottom .description-box, #content-top .book-btn {
   box-shadow: 5px 5px 5px grey;
 }
@@ -139,6 +127,23 @@ header #navbar a {
   .book-btn {
     font-size: 1.5em !important;
   }
+
+  .bill-img {
+    width: 25% !important;
+    margin-right: 10px !important;
+  }
+
+  .bill-content {
+    height: 500px !important;
+  }
+
+  .bill-both {
+    height: 1050px !important;
+  }
+
+  .highlight-img {
+    transition: none;
+  }
 }
 @media screen and (max-width: 420px) {
   #headline {
@@ -227,21 +232,66 @@ header #navbar a {
 
 .bill-content {
   margin: 5%;
-  height: 500px;
+  height: 400px;
   line-height: 2.5em;
   padding: 15px;
 }
 
 .bill-header {
   width: 30%;
+  color: #003680;
 }
 
 .bill-img {
   width: 30%;
-  border-radius: 50%;
-  position: relative;
   float: right;
   margin-right: 50px;
+}
+
+.bill-img, #golden {
+  border-radius: 50%;
+  position: relative;
+}
+
+#golden {
+  width: 100%;
+}
+
+#invoice-both-bottom {
+  width: 100%;
+  height: auto;
+  margin: 5px 15px;
+}
+
+#goldenBtn {
+  width: 30%;
+}
+#goldenBtn #price-london {
+  background-color: white;
+  hight: 50px;
+  width: 30%;
+  line-height: 4em;
+  font-size: 2em;
+  border: 4px dotted #003680;
+}
+#goldenBtn #bill-both-container {
+  display: flex;
+  jusify-content: space-around;
+}
+#goldenBtn .bill-both {
+  width: 28%;
+}
+
+* {
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
 }
 
 .shape-content-box, #content-top figure, #content-bottom .description-box {
@@ -301,6 +351,7 @@ figure {
 }
 #content-top .btn {
   text-align: center;
+  padding-top: 8px;
 }
 #content-top #book-amsterdam {
   margin-top: 10px;
@@ -310,6 +361,12 @@ figure {
   background-color: #fbf4ad;
   padding: 8px;
   color: #003680;
+}
+#content-top #content-invoice {
+  height: 250px;
+}
+#content-top .trip-name {
+  padding: 10px 40px;
 }
 
 #content-bottom h3 {
@@ -346,6 +403,14 @@ figure {
   width: 18vw;
   height: 13vw;
   margin-top: 25px;
+}
+
+.highlight-img {
+  transition: transform 2s;
+}
+
+.highlight-img:hover {
+  transform: scale(1.5, 1.5);
 }
 
 footer {
