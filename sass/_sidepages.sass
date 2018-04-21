@@ -1,0 +1,47 @@
+.borders
+	border: 1px solid $font-color-price
+.border-radius
+	border-radius: 5px
+#amsterdam-info, #london-info
+	width: 90%
+	margin: 5%
+	@extend .borders
+	@extend .shadow
+	@extend .border-radius
+	.flag
+		width: 100%
+		max-height: 120px	
+	#amsterdam-info
+		
+	.description-travel
+		
+		padding: 20px
+		line-height: 1.8em
+		color: #333
+	.description-travel-text h1
+		color: $font-color-city
+	.description-travel-text ul
+		padding-left: 50px
+
+	.description-travel-text p::first-letter
+		font-size: 2.5vw
+		font-weight: bold
+		color: $back-color-header
+	.hotel-link
+		text-align: center
+	.hotel-link img
+		width: 60%
+		max-width: 100%
+		@extend .shadow
+		@extend .border-radius
+	.discount-button
+		
+		border: 3px solid green
+		text-align: center
+		width: 70%
+		margin: 2% 15%
+		@extend .border-radius
+		@extend .shadow
+		font-size: 2vw
+		line-height: 2.5em
+		background-color: red

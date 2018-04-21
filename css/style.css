@@ -10,7 +10,7 @@ a {
   font-size: 1.5em;
 }
 
-.shadow, header #headline-area, header #navbar, .shape-content-box, #content-top figure, #content-bottom .description-box {
+.shadow, header #headline-area, header #navbar, #amsterdam-info, #london-info, #amsterdam-info .hotel-link img, #london-info .hotel-link img, #amsterdam-info .discount-button, #london-info .discount-button, .shape-content-box, #content-top figure, #content-bottom .description-box {
   box-shadow: 5px 5px 5px grey;
 }
 
@@ -96,7 +96,7 @@ header #navbar a {
   }
 
   #navbar {
-    font-size: 0.8em !important;
+    font-size: 0.7em !important;
   }
 
   figcaption {
@@ -136,7 +136,12 @@ header #navbar a {
   }
 
   #navbar a {
-    padding: 5px 10px !important;
+    padding: 5px 5px !important;
+  }
+
+  #navbar {
+    font-size: 0.45em !important;
+    height: 30px !important;
   }
 
   .footer-content {
@@ -144,13 +149,70 @@ header #navbar a {
     padding: 5px 12px !important;
   }
 }
+@media screen and (max-width: 350px) {
+  #headline {
+    font-size: 0.6em !important;
+    left: 140px !important;
+  }
+
+  #logo {
+    left: 30px !important;
+  }
+}
+.borders, #amsterdam-info, #london-info, .shape-content-box, #content-top figure, #content-bottom .description-box {
+  border: 1px solid #666666;
+}
+
+.border-radius, #amsterdam-info, #london-info, #amsterdam-info .hotel-link img, #london-info .hotel-link img, #amsterdam-info .discount-button, #london-info .discount-button, .shape-content-box, #content-top figure, #content-bottom .description-box {
+  border-radius: 5px;
+}
+
+#amsterdam-info, #london-info {
+  width: 90%;
+  margin: 5%;
+}
+#amsterdam-info .flag, #london-info .flag {
+  width: 100%;
+  max-height: 120px;
+}
+#amsterdam-info .description-travel, #london-info .description-travel {
+  padding: 20px;
+  line-height: 1.8em;
+  color: #333;
+}
+#amsterdam-info .description-travel-text h1, #london-info .description-travel-text h1 {
+  color: #018cc5;
+}
+#amsterdam-info .description-travel-text ul, #london-info .description-travel-text ul {
+  padding-left: 50px;
+}
+#amsterdam-info .description-travel-text p::first-letter, #london-info .description-travel-text p::first-letter {
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: #003680;
+}
+#amsterdam-info .hotel-link, #london-info .hotel-link {
+  text-align: center;
+}
+#amsterdam-info .hotel-link img, #london-info .hotel-link img {
+  width: 60%;
+  max-width: 100%;
+}
+#amsterdam-info .discount-button, #london-info .discount-button {
+  border: 3px solid green;
+  text-align: center;
+  width: 70%;
+  margin: 2% 15%;
+  font-size: 2vw;
+  line-height: 2.5em;
+  background-color: red;
+}
+
 .shape-content-box, #content-top figure, #content-bottom .description-box {
   min-width: 400px;
   width: 40%;
   margin-top: 15px;
   background-color: white;
-  border: 1px solid #666666;
-  border-radius: 5px;
 }
 
 .flex-content, #content-top, #content-bottom {

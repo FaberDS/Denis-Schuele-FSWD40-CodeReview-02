@@ -2,13 +2,14 @@
 @import fonts
 @import top
 @import mediaquierries
+@import sidepages
 .shape-content-box
 	min-width: 400px
 	width: 40%
 	margin-top: 15px
 	background-color: white
-	border: 1px solid $font-color-price
-	border-radius: 5px
+	@extend .border-radius //.border-radius is defined in _sidepages.sass
+	@extend .borders //.border is defined in _sidepages.sass
 	@extend .shadow //.shadow is defined in _header.sass
 	
 .flex-content
